@@ -1,0 +1,144 @@
+<div class="header">
+   <div class="header-left">
+      <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="Logo">
+      </a>
+      <a href="index.html" class="logo logo-small">
+        <img src="assets/img/logo.png" alt="Logo" >
+
+      </a>
+   </div>
+   <ul class="nav user-menu">      
+      <li class="nav-item dropdown has-arrow">
+         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+         <span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+         </a>
+         <div class="dropdown-menu">
+            <div class="user-header">
+               <div class="avatar avatar-sm">
+                  <img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+               </div>
+               <div class="user-text">
+                  <h6>Ryan Taylor</h6>
+                  <p class="text-muted mb-0">Student</p>
+               </div>
+            </div>
+            <a class="dropdown-item" (click)="logout()">Logout</a>
+         </div>
+      </li>
+   </ul>
+</div>
+
+
+
+
+
+
+
+
+<div class="sidebar" id="sidebar" >
+   <div class="sidebar-inner slimscroll">
+      <div id="sidebar-menu" class="sidebar-menu">
+         <ul>
+            <li class="menu-title">
+           </li>
+          
+                 <li><a href="index.html" class="active">Admin Dashboard</a></li>
+           
+          
+                 <li style="background-color: rgba(204, 195, 195, 0.425); 
+                 border: 1px solid #ccc; 
+                 border-radius: 8px; 
+                 padding: 10px;
+                 margin-bottom: 5px;
+                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"> Students</li>
+      
+             
+                 <li><a >Student List</a></li>
+                 <li><a >Student Add</a></li>
+                 <li><a >Student Edit</a></li>
+              
+                 <li style="background-color: rgba(204, 195, 195, 0.425); 
+                 border: 1px solid #ccc; 
+                 border-radius: 8px; 
+                 padding: 10px;
+                 margin-bottom: 5px;
+                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"> Teachers</li>
+        
+               
+                  <li><a >Teacher List</a></li>
+                  <li><a>Teacher Add</a></li>
+                  <li><a >Teacher Edit</a></li>
+            
+           
+                  <li style="background-color: rgba(204, 195, 195, 0.425); 
+          border: 1px solid #ccc; 
+          border-radius: 8px; 
+          padding: 10px;
+          margin-bottom: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"> Groups</li>
+
+                  
+                  <li><a >Group List</a></li>
+                  <li><a >Group Add</a></li>
+                  <li><a >Group Edit</a></li>
+          
+
+                  <li style="background-color: rgba(204, 195, 195, 0.425); 
+          border: 1px solid #ccc; 
+          border-radius: 8px; 
+          padding: 10px;
+          margin-bottom: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"> Subjects</li>
+
+
+                  <li><a >Subject List</a></li>
+                  <li><a >Subject Add</a></li>
+                  <li><a >Subject Edit</a></li>
+              
+            <li class="menu-title">
+               <span >Management</span>
+            </li>
+            
+            <li>
+               <a ><i class="fas fa-holly-berry"></i> <span>Students Notes</span></a>
+            </li>
+
+            <li>
+              <a ><i class="fas fa-holly-berry"></i> <span>certificate of achievement </span></a>
+           </li>
+         </ul></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="page-wrapper">
+   <div class="content container-fluid">
+<div class="container">
+   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+ 
+     <!-- Card 2 -->
+     <div class="col" *ngFor="let x of cours">
+       <div class="card">
+         <div class="card-body">
+           <h5 class="card-title">{{x.courseName}}</h5>
+           <p class="card-text">{{x.teacherName}}</p>
+           <p class="card-text">note : {{x.moduleNote}}</p>
+           </div>
+       </div>
+     </div>
+
+   </div>
+ </div>
+   </div>
+</div>  

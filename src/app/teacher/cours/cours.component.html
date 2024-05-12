@@ -1,0 +1,19 @@
+<div class="page-wrapper">
+    <div class="content container-fluid">
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  
+      <!-- Card 2 -->
+      <div class="col" *ngFor="let x of groups">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{x.groupName}}</h5>
+            <p class="card-text">{{x.courseName}}</p>
+            <button type="button" class="btn btn-primary" (click)="etud_list(x.id_group)">List des eleves </button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    </div>
+</div>  
